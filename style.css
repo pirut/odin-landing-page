@@ -218,6 +218,7 @@ body {
 }
 
 .modal-wrapper {
+    justify-content: stretch;
     background-color: white;
     padding-top: 64px;
     padding-bottom: 64px;
@@ -225,9 +226,59 @@ body {
 
 .modal {
     display: flex;
+    flex: 1;
     justify-content: space-between;
+    align-items: center;
     background-color: #3882f6;
     color: white;
+    border-radius: 6px;
+    box-shadow: var(--shadow-elevation-medium);
+}
+
+.modal-left {
+    display: flex;
+    flex-direction: column;
+    margin: 32px;
+    margin-left: 15%;
+}
+
+.modal-call-to-action {
+    padding: 0px;
+    margin: 0px;
+    color: white;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.modal-call-to-action-text {
+    padding: 0px;
+    margin: 0px;
+    color: white;
+    font-size: small;
+}
+
+.modal-right {
+    display: flex;
+    flex-direction: column;
+    margin: 32px;
+    margin-right: 15%;
+}
+
+.modal-button {
+    padding: 8px 32px;
+    background-color: #3882f6;
+    color: white;
+    border: 2px solid white;
+    border-radius: 6px;
+    transition: all .5s;
+}
+
+.modal-button:hover {
+    box-shadow: var(--shadow-elevation-medium);
+}
+
+.modal-button:active {
+    box-shadow: var(--shadow-elevation-low);
 }
 
 .footer {
