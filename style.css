@@ -1,32 +1,48 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
 
 :root {
     --shadow-color: 0deg 0% 35%;
-    --shadow-elevation-low:
-      0.3px 0.5px 0.7px hsl(var(--shadow-color) / 0.39),
-      0.4px 0.9px 1.1px -1.2px hsl(var(--shadow-color) / 0.41),
-      1.1px 2.2px 2.8px -2.3px hsl(var(--shadow-color) / 0.43);
-    --shadow-elevation-medium:
-      0.3px 0.5px 0.7px hsl(var(--shadow-color) / 0.41),
-      0.9px 1.8px 2.3px -0.8px hsl(var(--shadow-color) / 0.43),
-      2.3px 4.6px 5.9px -1.6px hsl(var(--shadow-color) / 0.44),
-      5.5px 11.1px 14.2px -2.3px hsl(var(--shadow-color) / 0.45);
-    --shadow-elevation-high:
-      0.3px 0.5px 0.7px hsl(var(--shadow-color) / 0.44),
-      2px 4.1px 5.2px -0.4px hsl(var(--shadow-color) / 0.45),
-      4px 8px 10.3px -0.8px hsl(var(--shadow-color) / 0.45),
-      7px 14px 18px -1.2px hsl(var(--shadow-color) / 0.46),
-      11.8px 23.6px 30.3px -1.6px hsl(var(--shadow-color) / 0.47),
-      19.3px 38.5px 49.4px -2px hsl(var(--shadow-color) / 0.48),
-      30.3px 60.5px 77.6px -2.3px hsl(var(--shadow-color) / 0.49);
-  }
+    --shadow-elevation-low: 0.3px 0.5px 0.7px hsl(var(--shadow-color) / 0.39), 0.4px 0.9px 1.1px -1.2px hsl(var(--shadow-color) / 0.41),
+        1.1px 2.2px 2.8px -2.3px hsl(var(--shadow-color) / 0.43);
+    --shadow-elevation-medium: 0.3px 0.5px 0.7px hsl(var(--shadow-color) / 0.41), 0.9px 1.8px 2.3px -0.8px hsl(var(--shadow-color) / 0.43),
+        2.3px 4.6px 5.9px -1.6px hsl(var(--shadow-color) / 0.44), 5.5px 11.1px 14.2px -2.3px hsl(var(--shadow-color) / 0.45);
+    --shadow-elevation-high: 0.3px 0.5px 0.7px hsl(var(--shadow-color) / 0.44), 2px 4.1px 5.2px -0.4px hsl(var(--shadow-color) / 0.45),
+        4px 8px 10.3px -0.8px hsl(var(--shadow-color) / 0.45), 7px 14px 18px -1.2px hsl(var(--shadow-color) / 0.46),
+        11.8px 23.6px 30.3px -1.6px hsl(var(--shadow-color) / 0.47), 19.3px 38.5px 49.4px -2px hsl(var(--shadow-color) / 0.48),
+        30.3px 60.5px 77.6px -2.3px hsl(var(--shadow-color) / 0.49);
+}
 
 body {
     display: flex;
     flex-direction: column;
     font-family: Roboto, sans-serif;
     margin: 0px;
-    background-color: darkgrey;
+    background-color: lightgrey;
+    /* background-image: linear-gradient(
+        180deg,
+        hsl(221deg 100% 75%) 0%,
+        hsl(222deg 97% 77%) 13%,
+        hsl(223deg 94% 78%) 19%,
+        hsl(223deg 90% 79%) 24%,
+        hsl(224deg 86% 80%) 28%,
+        hsl(224deg 82% 81%) 32%,
+        hsl(225deg 77% 82%) 35%,
+        hsl(226deg 71% 83%) 39%,
+        hsl(227deg 66% 84%) 42%,
+        hsl(228deg 59% 84%) 45%,
+        hsl(229deg 52% 85%) 48%,
+        hsl(231deg 45% 86%) 52%,
+        hsl(234deg 36% 86%) 55%,
+        hsl(238deg 27% 87%) 58%,
+        hsl(247deg 19% 87%) 61%,
+        hsl(268deg 12% 88%) 65%,
+        hsl(333deg 9% 88%) 68%,
+        hsl(15deg 18% 89%) 72%,
+        hsl(27deg 32% 90%) 76%,
+        hsl(32deg 47% 90%) 81%,
+        hsl(35deg 64% 91%) 87%,
+        hsl(37deg 82% 91%) 100%
+    ); */
 }
 
 .header,
@@ -70,7 +86,7 @@ body {
     text-decoration: none;
     color: black;
     font-size: 16px;
-    transition: all .25s;
+    transition: all 0.25s;
 }
 
 .header-link-group a:hover {
@@ -129,7 +145,7 @@ body {
     padding: 8px 24px;
     border-radius: 8px;
     box-shadow: var(--shadow-elevation-medium);
-    transition: all .25s;
+    transition: all 0.25s;
 }
 
 .hero-button:hover {
@@ -182,7 +198,7 @@ body {
     border-radius: 16px;
     object-fit: cover;
     box-shadow: var(--shadow-elevation-medium);
-    transition: all .5s;
+    transition: all 0.5s;
 }
 
 .box-image:hover {
@@ -270,7 +286,7 @@ body {
     color: white;
     border: 2px solid white;
     border-radius: 6px;
-    transition: all .5s;
+    transition: all 0.5s;
 }
 
 .modal-button:hover {
@@ -282,6 +298,7 @@ body {
 }
 
 .footer {
+    background-color: transparent;
     padding: 24px;
     justify-content: center;
     text-align: center;
